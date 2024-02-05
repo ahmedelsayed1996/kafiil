@@ -77,42 +77,6 @@ minusIcon.addEventListener('click', function () {
 });
 
 // Function to add review content
-// document.addEventListener('DOMContentLoaded', function () {
-//     const postReviewBtn = document.getElementById('postReviewBtn');
-//     const reviewTextarea = document.getElementById('review');
-//     const reviewContainer = document.querySelector('.row'); // Container for existing reviews
-
-//     postReviewBtn.addEventListener('click', function () {
-//         const reviewContent = reviewTextarea.value.trim(); // Get review content from textarea
-//         console.log(reviewContent);
-//         if (reviewContent !== '') {
-//             const reviewTemplate = `
-//                 <div class="col-1">
-//                     <img class="img" src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg" alt="" />
-//                 </div>
-//                 <div class="col-11">
-//                     <h4 class="review-name">Ahmed Elsayed</h4>
-//                     <i class="bi bi-star-fill star-gold"></i>
-//                     <i class="bi bi-star-fill star-gold"></i>
-//                     <i class="bi bi-star-fill star-gold"></i>
-//                     <i class="bi bi-star-fill star-gold"></i>
-//                     <i class="bi bi-star" style="color: #E6EAEF;"></i>
-//                     <span class="review-time">30m</span>
-//                     <p class="review-content">${reviewContent}</p>
-//                 </div>
-//             `;
-
-//             const reviewElement = document.createElement('div');
-//             reviewElement.classList.add('row');
-//             reviewElement.innerHTML = reviewTemplate;
-
-//             reviewContainer.appendChild(reviewElement); // Append the new review to the container
-
-//             // Clear the textarea after posting the review
-//             // reviewTextarea.value = '';
-//         }
-//     });
-// });
 document.addEventListener('DOMContentLoaded', function() {
     const postReviewBtn = document.getElementById('postReviewBtn');
     const reviewTextarea = document.getElementById('review');
@@ -154,5 +118,39 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Function to add favirate service
+// document.addEventListener('DOMContentLoaded', function() {
+//     const heartIcon = document.getElementById('heartIcon');
+
+//     heartIcon.addEventListener('click', function() {
+//         const heart = heartIcon.querySelector('.bi-heart');
+//         if (heart.classList.contains('bi-heart-fill')) {
+//             heart.classList.remove('bi-heart-fill');
+//             heart.style.color = '';
+//         } else {
+//             heart.classList.remove('bi-heart')
+//             heart.classList.add('bi-heart-fill');
+//             heart.style.color = 'red'; 
+//         }
+//     });
+// });
+
+function toggleHeartColor(icon) {
+    
+    const heart = icon.querySelector('.bi-heart') || icon.querySelector('.bi-heart-fill');
+    if (heart.classList.contains('bi-heart-fill')) {
+        heart.classList.remove('bi-heart-fill');
+        heart.classList.add('bi-heart');
+        heart.style.color = ''; // Remove inline color if set
+    } else {
+        heart.classList.add('bi-heart-fill');
+        heart.classList.remove('bi-heart')
+        heart.style.color = 'red'; // Set color to red
+    }
+    
+}
+
+
 
 
