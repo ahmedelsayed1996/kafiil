@@ -23,7 +23,7 @@
       <!-- logo -->
       <div>
         <a class="navbar-brand" href="#">
-          <img src="./images/main-logo2.svg" width="100" alt="" />
+          <img src="./images/main-logo2.svg" width="100" alt="logo" />
         </a>
       </div>
       <!-- left section -->
@@ -86,7 +86,7 @@
           <button class="user" data-toggle="dropdown" aria-expanded="true">
             <img
               src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-              alt="" />
+              alt="profile image" />
           </button>
           <div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="
                 position: absolute;
@@ -102,7 +102,7 @@
                 <span class="profile-img">
                   <img
                     src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-                    alt="" />
+                    alt="profile image" />
                 </span>
                 <span class="info">
                   <span class="name"> Ahmed Saied </span>
@@ -164,11 +164,11 @@
     <div class="container mt-5 ">
       <div class="row">
         <!-- left section -->
-        <div class="col-12 col-lg-8">
+        <div class="col-12 col-lg-9">
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
               <li class="breadcrumb-item">Design</li>
-              <li class="breadcrumb-item active" aria-current="page">
+              <li class="breadcrumb-item " aria-current="page">
                 Logo Design
               </li>
             </ol>
@@ -186,7 +186,7 @@
               <i class="bi bi-star"></i>
               <span class="rate-sec">4.1 (500)</span>
             </div>
-            <div class="col text-end">
+            <div class="col text-end" onclick="toggleHeartColor(this)">
               <i class="bi bi-share mx-3"></i>
               <i class="bi bi-heart"></i>
             </div>
@@ -229,7 +229,7 @@
             </button>
           </div>
           <!-- Description section -->
-          <h4 class="head-line mt-4">Description</h4>
+          <h4 class="head-line mt-4 mb-4">Description</h4>
           <p class="py-4 px-3 bg-light rounded">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
             aut? Perferendis dolor reprehenderit quia porro animi eos est
@@ -399,7 +399,7 @@
               <div class="col-1">
                 <img class="img"
                   src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-                  alt="" />
+                  alt="profile image" />
               </div>
               <div class="col-11">
                 <h4 class="review-name">Ahmed Elsayed</h4>
@@ -418,7 +418,7 @@
               <div class="col-1">
                 <img class="img"
                   src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-                  alt="" />
+                  alt="profile image" />
               </div>
               <div class="col-11">
                 <h4 class="review-name">Ahmed Elsayed</h4>
@@ -437,7 +437,7 @@
               <div class="col-1">
                 <img class="img"
                   src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-                  alt="" />
+                  alt="reviewer image" />
               </div>
               <div class="col-11">
                 <h4 class="review-name">Ahmed Elsayed</h4>
@@ -456,7 +456,7 @@
               <div class="col-1">
                 <img class="img"
                   src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg"
-                  alt="" />
+                  alt="comment reviewer image" />
               </div>
               <div class="col-11">
                 <textarea name="review" id="review" cols="30" rows="6" class="form-control"
@@ -473,9 +473,9 @@
         <div class="col-12 col-lg-3 ">
           <!-- card info -->
           <div class="card card-info">
-            <p class="fw-bold p-3">seller</p>
+            <p class="fw-bold p-3">Seller</p>
             <a href="#" class="text-center p-2">
-              <img class="" src="./images/Subtract.jpg" alt="" />
+              <img class="" src="./images/Subtract.jpg" alt="seller image" />
             </a>
             <div class="text-center">
               <p class="user-name">
@@ -483,7 +483,7 @@
                   Jane Smith
                   <i class="bi bi-patch-check-fill"></i></a>
               </p>
-              <span class="review-time"><i class="bi bi-geo-alt-fill mx-1" ></i>Cairo, Egypt</span>
+              <span class="review-time"><i class="bi bi-geo-alt-fill mx-1"></i>Cairo, Egypt</span>
               <div class="col stars">
                 <i class="bi bi-star-fill star-gold"></i>
                 <i class="bi bi-star-fill star-gold"></i>
@@ -493,7 +493,7 @@
                 <span class="rate-sec">4.1 (500)</span>
               </div>
               <div class="my-3">
-                <i class="bi bi-patch-check main-color btn-gray main-color"></i>
+                <i class="bi bi-award-fill btn-gray main-color"></i>
                 <i class="bi bi-box-arrow-in-right btn-gray main-color"></i>
                 <i class="bi bi-person-vcard-fill btn-gray main-color"></i>
               </div>
@@ -503,6 +503,129 @@
               </p>
             </div>
             <button class="p-2 m-4 rounded-3 bt-card">Contact Me</button>
+          </div>
+          <div class="card card-info p-3 mt-4">
+            <p class="fw-bold ">Info</p>
+            <div class="row">
+              <div class="col">
+                <i class="bi bi-currency-dollar me-1 icon-info"></i> <span class="info-title">Price</span>
+              </div>
+              <div class="col text-end info-title">$10</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-10">
+                <i class="bi bi-clock-fill me-1 icon-info"></i> <span class="info-title">Delivery Duration</span>
+              </div>
+              <div class="col-2 text-end info-title">$10</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-10">
+                <i class="bi bi-basket-fill me-1 icon-info"></i> <span class="info-title">In Progress Orders</span>
+              </div>
+              <div class="col-2 text-end info-title">2</div>
+            </div>
+
+            <div class="row mt-2">
+              <div class="col-10">
+                <i class="bi bi-people-fill me-1 icon-info"></i> <span class="info-title">Customers</span>
+              </div>
+              <div class="col-2 text-end info-title">2</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-10">
+                <i class="bi bi-percent me-1 icon-info"></i> <span class="info-title">Sales</span>
+              </div>
+              <div class="col-2 text-end info-title">$25</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-7">
+                <i class="bi bi-list-task me-1 icon-info"></i> <span class="info-title">Category</span>
+              </div>
+              <div class="col-5 text-end info-title">Design</div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-7">
+                <i class="bi bi-list-task me-1 icon-info"></i> <span class="info-title">Subcategory</span>
+              </div>
+              <div class="col-5 text-end info-title">Logo Design</div>
+            </div>
+          </div>
+          <div class="card card-info p-3 mt-4 ">
+            <p class="fw-bold ">Share & Earn</p>
+            <span class="d-flex justify-content-between">
+              <i class="bi bi-linkedin me-2"></i>
+
+              <i class="bi bi-facebook me-2"></i>
+              <i class="bi bi-whatsapp me-2"></i>
+              <i class="bi bi-twitter"></i>
+            </span>
+
+          </div>
+          <div class="row mt-4">
+            <div class="col-8">
+              <p class="fw-bold ">Seller Other Services</p>
+            </div>
+            <div class="col-4 text-end"> <span class="gray-color">see more </span></div>
+          </div>
+          <div class="card card-info p-0 mt-4">
+            <div class="row">
+
+              <div class="col-4 p-0"><img src="./images/seller service.png" alt="seller service"></div>
+              <div class="col pt-3">
+                <p class="title-service">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row">
+                  <div class="col-5"><i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9 (50)</span>
+                  </div>
+                  <div class="col-4">
+                    <i class="bi bi-bookmark-fill main-color"></i>
+                   <b>$10</b> </div>
+                  <div class="col" onclick="toggleHeartColor(this)">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-info p-0 mt-4">
+            <div class="row">
+
+              <div class="col-4 p-0"><img src="./images/seller service.png" alt="seller service"></div>
+              <div class="col pt-3">
+                <p class="title-service">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row">
+                  <div class="col-5"><i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9 (50)</span>
+                  </div>
+                  <div class="col-4">
+                    <i class="bi bi-bookmark-fill main-color"></i>
+                    <b>$10</b></div>
+                  <div class="col" onclick="toggleHeartColor(this)">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-info p-0 mt-4">
+            <div class="row">
+
+              <div class="col-4 p-0"><img src="./images/seller service.png" alt="seller service"></div>
+              <div class="col pt-3">
+                <p class="title-service">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <div class="row">
+                  <div class="col-5"><i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9 (50)</span>
+                  </div>
+                  <div class="col-4">
+                    <i class="bi bi-bookmark-fill main-color"></i>
+                    <b>$10</b></div>
+                  <div class="col" onclick="toggleHeartColor(this)">
+                    <i class="bi bi-heart"></i>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -523,126 +646,126 @@
             <div class="heart-icon mt-2 ms-2" onclick="toggleHeartColor(this)">
               <i class="bi bi-heart"></i>
             </div>
-            
+
             <img src="./images/service.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
-                <p class="card-text">
-                    <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
-                    <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
-                </p>
+              <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
+              <p class="card-text">
+                <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
+                <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
+              </p>
             </div>
             <div class="card-foot">
-                <div class="owner">
-                    <a href="/" class="img">
-                        <img src="./images/Subtract.jpg" alt="" loading="lazy">
-                    </a>
-                    <div class="owner-name mx-2">
-                        <h6>Ahmed Sayed</h6>
-                    </div>
+              <div class="owner">
+                <a href="/" class="img">
+                  <img src="./images/Subtract.jpg" alt="owner image" loading="lazy">
+                </a>
+                <div class="owner-name mx-2">
+                  <h6>Ahmed Sayed</h6>
                 </div>
-                <span class="">
-                    <i class="bi bi-bookmark-fill main-color"></i>
-                    $10
-                </span>
+              </div>
+              <span class="">
+                <i class="bi bi-bookmark-fill main-color"></i>
+                $10
+              </span>
             </div>
-        </div>
-        
+          </div>
+
         </div>
         <div class="col">
           <div class="card" style="position: relative;">
             <div class="heart-icon mt-2 ms-2" onclick="toggleHeartColor(this)">
               <i class="bi bi-heart"></i>
             </div>
-            
+
             <img src="./images/service.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
-                <p class="card-text">
-                    <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
-                    <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
-                </p>
+              <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
+              <p class="card-text">
+                <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
+                <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
+              </p>
             </div>
             <div class="card-foot">
-                <div class="owner">
-                    <a href="/" class="img">
-                        <img src="./images/Subtract.jpg" alt="" loading="lazy">
-                    </a>
-                    <div class="owner-name mx-2">
-                        <h6>Ahmed Sayed</h6>
-                    </div>
+              <div class="owner">
+                <a href="/" class="img">
+                  <img src="./images/Subtract.jpg" alt="owner image" loading="lazy">
+                </a>
+                <div class="owner-name mx-2">
+                  <h6>Ahmed Sayed</h6>
                 </div>
-                <span class="">
-                    <i class="bi bi-bookmark-fill main-color"></i>
-                    $10
-                </span>
+              </div>
+              <span class="">
+                <i class="bi bi-bookmark-fill main-color"></i>
+                $10
+              </span>
             </div>
-        </div>
-        
+          </div>
+
         </div>
         <div class="col">
           <div class="card" style="position: relative;">
             <div class="heart-icon mt-2 ms-2" onclick="toggleHeartColor(this)">
               <i class="bi bi-heart"></i>
             </div>
-            
+
             <img src="./images/service.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
-                <p class="card-text">
-                    <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
-                    <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
-                </p>
+              <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
+              <p class="card-text">
+                <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
+                <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
+              </p>
             </div>
             <div class="card-foot">
-                <div class="owner">
-                    <a href="/" class="img">
-                        <img src="./images/Subtract.jpg" alt="" loading="lazy">
-                    </a>
-                    <div class="owner-name mx-2">
-                        <h6>Ahmed Sayed</h6>
-                    </div>
+              <div class="owner">
+                <a href="/" class="img">
+                  <img src="./images/Subtract.jpg" alt="owner image" loading="lazy">
+                </a>
+                <div class="owner-name mx-2">
+                  <h6>Ahmed Sayed</h6>
                 </div>
-                <span class="">
-                    <i class="bi bi-bookmark-fill main-color"></i>
-                    $10
-                </span>
+              </div>
+              <span class="">
+                <i class="bi bi-bookmark-fill main-color"></i>
+                $10
+              </span>
             </div>
-        </div>
-        
+          </div>
+
         </div>
         <div class="col">
           <div class="card" style="position: relative;">
             <div class="heart-icon mt-2 ms-2" onclick="toggleHeartColor(this)">
               <i class="bi bi-heart"></i>
             </div>
-            
+
             <img src="./images/service.png" class="card-img-top" alt="...">
             <div class="card-body">
-                <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
-                <p class="card-text">
-                    <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
-                    <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
-                </p>
+              <h5 class="service-title">Lorem ipsum dolor sit amet consectetur adipisicing .</h5>
+              <p class="card-text">
+                <i class="bi bi-star-fill star-gold"></i> <span class="review-time">4.9</span> &nbsp;
+                <i class="bi bi-cart-fill " style="color: #8692A6;"></i><span class="review-time"> 300</span>
+              </p>
             </div>
             <div class="card-foot">
-                <div class="owner">
-                    <a href="/" class="img">
-                        <img src="./images/Subtract.jpg" alt="" loading="lazy">
-                    </a>
-                    <div class="owner-name mx-2">
-                        <h6>Ahmed Sayed</h6>
-                    </div>
+              <div class="owner">
+                <a href="/" class="img">
+                  <img src="./images/Subtract.jpg" alt="owner image" loading="lazy">
+                </a>
+                <div class="owner-name mx-2">
+                  <h6>Ahmed Sayed</h6>
                 </div>
-                <span class="">
-                    <i class="bi bi-bookmark-fill main-color"></i>
-                    $10
-                </span>
+              </div>
+              <span class="">
+                <i class="bi bi-bookmark-fill main-color"></i>
+                $10
+              </span>
             </div>
+          </div>
+
         </div>
-        
-        </div>
-        
+
       </div>
     </div>
   </main>
