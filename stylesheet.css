@@ -17,6 +17,9 @@ a {
     z-index: 999;
     transition: .5s;
 }
+.fill-gray {
+    color: #E6EAEF;
+}
 
 .navbar-collapse {
     flex-grow: unset !important;
@@ -29,24 +32,17 @@ a {
 }
 
 .header .nav-list .link {
-    color: #505050;
-}
-
-.header .nav-list .link {
-    flex-direction: column;
-    padding-bottom: 0;
-    padding-top: 0;
-}
-
-.header .nav-list .link {
     display: flex;
     align-items: center;
     padding: 13px 7px;
     margin: 0 5px;
-    font-size: 14px;
-
+    font-size: 16px;
+    color: #C3C5C8;
     border-radius: 6px;
     background-color: transparent;
+    flex-direction: column;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
 .header .nav-list .link:hover {
@@ -139,6 +135,7 @@ a {
     background-color: transparent;
     color: #1dbf73;
 }
+
 .breadcrumb-item {
     color: #8692A6;
 }
@@ -158,12 +155,13 @@ a {
     padding: 5px 8px;
     border-radius: 7px;
     font-size: 24px;
-    
+
 }
 
 .star-gold {
     color: #FFCB31;
 }
+
 .icon-info {
     color: #696F79;
 }
@@ -175,27 +173,33 @@ a {
 .main-color {
     color: #1DBF73;
 }
+
 .info-title {
     font-weight: 500;
     font-size: 14px;
     color: black;
 }
-.bi-linkedin{
+
+.bi-linkedin {
     color: #2867B2;
-    font-size: 50px;
+    font-size: 40px;
 }
-.bi-facebook{
+
+.bi-facebook {
     color: #1877F2;
-    font-size: 50px;
+    font-size: 40px;
 }
-.bi-whatsapp{
+
+.bi-whatsapp {
     color: #25D366;
-    font-size: 50px;
+    font-size: 40px;
 }
-.bi-twitter{
+
+.bi-twitter {
     color: #1DA1F2;
-    font-size: 50px;
+    font-size: 40px;
 }
+
 .title-service {
     font-size: 12px;
     font-weight: 600;
@@ -262,7 +266,7 @@ a {
     font-weight: 500;
 }
 
-.row .col-1 .img {
+.row .col-sm-12 .img {
     width: 49px;
     height: 49px;
     border-radius: 50%;

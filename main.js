@@ -37,12 +37,21 @@ window.onclick = function () {
 
 //  add check pointer in service ads
 serviceAds.forEach((icon) => {
-
     icon.addEventListener('click', (e) => {
-        e.currentTarget.classList.remove('bi-circle');
-        e.currentTarget.classList.toggle('bi-check-circle-fill');
-    })
-})
+        if (e.currentTarget.classList.contains('bi-check-circle-fill')) {
+            e.currentTarget.classList.remove('bi-check-circle-fill');
+            e.currentTarget.classList.add('bi');
+            e.currentTarget.classList.add('bi-circle');
+        } else {
+            e.currentTarget.classList.remove('bi');
+            e.currentTarget.classList.remove('bi-circle');
+            e.currentTarget.classList.add('bi-check-circle-fill');
+
+        }
+        
+    });
+});
+
 
 // Get references to the plus and minus icons and the total span
 const plusIcon = document.getElementById('plus');
@@ -77,22 +86,22 @@ minusIcon.addEventListener('click', function () {
 });
 
 // Function to add review content
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const postReviewBtn = document.getElementById('postReviewBtn');
     const reviewTextarea = document.getElementById('review');
     const reviewContainer = document.querySelector('.row-review'); // Container for existing reviews
 
     let reviewCount = 0; // Track the number of reviews added
 
-    postReviewBtn.addEventListener('click', function() {
+    postReviewBtn.addEventListener('click', function () {
         const reviewContent = reviewTextarea.value.trim(); // Get review content from textarea
 
         if (reviewContent !== '') {
             const reviewTemplate = `
-                        <div class="col-1">
+                        <div class="col-md-1 col-sm-12">
                             <img class="img" src="https://kafiil.s3.eu-central-1.amazonaws.com/media/avatar/bacde012c374fe24711da9157f14a5f3/c/6077aec8bd9cf4da40ce768d24cde290-small.jpg" alt="" />
                         </div>
-                        <div class="col-11">
+                        <div class="col-md-11 col-sm-12">
                             <h4 class="review-name">Ahmed Elsayed</h4>
                             <i class="bi bi-star-fill star-gold"></i>
                             <i class="bi bi-star-fill star-gold"></i>
@@ -100,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function() {
                             <i class="bi bi-star-fill star-gold"></i>
                             <i class="bi bi-star" style="color: #E6EAEF;"></i>
                             <span class="review-time">30m</span>
-                            <p class="review-content">${reviewContent.slice(0,50)}</p>
+                            <p class="review-content">${reviewContent.slice(0, 50)}</p>
                         </div>
             `;
 
@@ -119,25 +128,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// Function to add favirate service
-// document.addEventListener('DOMContentLoaded', function() {
-//     const heartIcon = document.getElementById('heartIcon');
-
-//     heartIcon.addEventListener('click', function() {
-//         const heart = heartIcon.querySelector('.bi-heart');
-//         if (heart.classList.contains('bi-heart-fill')) {
-//             heart.classList.remove('bi-heart-fill');
-//             heart.style.color = '';
-//         } else {
-//             heart.classList.remove('bi-heart')
-//             heart.classList.add('bi-heart-fill');
-//             heart.style.color = 'red'; 
-//         }
-//     });
-// });
-
+// Function to handel Heart Color
 function toggleHeartColor(icon) {
-    
+
     const heart = icon.querySelector('.bi-heart') || icon.querySelector('.bi-heart-fill');
     if (heart.classList.contains('bi-heart-fill')) {
         heart.classList.remove('bi-heart-fill');
@@ -148,9 +141,31 @@ function toggleHeartColor(icon) {
         heart.classList.remove('bi-heart')
         heart.style.color = 'red'; // Set color to red
     }
-    
+
 }
 
+$(document).ready(function () {
+    $('.user').click(function (e) {
+        e.stopPropagation(); // منع انتشار الحدث لعناصر أخرى
+
+        // تبديل عرض القائمة المنسدلة
+        $('.dropdown-menu').toggle();
+    });
+
+    // إخفاء القائمة المنسدلة عند النقر خارجها
+    $(document).click(function (e) {
+        if (!$(e.target).closest('.dropdown-menu').length) {
+            $('.dropdown-menu').hide();
+        }
+    });
+});
+
+//   $(document).ready(function(){
+//     $('.main-color').click(function(){
+//       // تبديل الكلاس عنصر الأيقونة
+//       $(this).find('i').toggleClass('bi-circle bi-check-circle');
+//     });
+//   });
 
 
 
